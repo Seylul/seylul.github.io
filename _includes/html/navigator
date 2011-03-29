@@ -1,0 +1,24 @@
+<!-- Navigator start -->
+{% capture section %}{% if page.section == null or page.section == "" %}{{ page.categories }}{% else %}{{ page.section }}{% endif %}{% endcapture %}
+<a href="{{ site.url }}/" title="Ön Sayfa" id="navtop"></a>
+
+<span class="navigator">
+  {% for i in (1..10) %}
+    {% capture this %}{% cycle "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" %}{% endcapture %}
+    {% capture sectionsize %}{{ site.categories[this] | size }}{% endcapture %}
+    {% capture sectiontitlekey %}section{{ this }}{% endcapture %}
+    {% capture sectiontitle %}{{ site.param[sectiontitlekey] }}{% endcapture %}
+    {% unless sectionsize == "0" %}
+      {% if this == section %}
+	{% if page.isindex %}
+	  <span class="selflink" title="{{ sectiontitle }}" id="navinactive{{ this }}"></span>
+	{% else %}
+	  <a href="{{ site.url }}/{{ this }}" title="{{ sectiontitle }}" id="navinactive{{ this }}"></a>
+	{% endif %}
+      {% else %}
+	<a href="{{ site.url }}/{{ this }}" title="{{ sectiontitle }}" id="navactive{{ this }}"></a>
+      {% endif %}&nbsp;
+    {% endunless %}
+  {% endfor %}
+</span>
+<!-- Navigator end -->

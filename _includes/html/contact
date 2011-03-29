@@ -1,0 +1,22 @@
+<div class="contact">
+  <p>
+    {{ site.param.fullname }}<br />
+    {{ site.param.title }}<br />
+    {{ site.param.email }}<br />
+    {% if site.param.gpg %}
+      GnuPG ortak anahtar
+    {% endif %}
+  </p>
+</div>
+<div class="contact">
+  <p>
+    <a href="http://github.com/{{ site.account }}/">github.com/{{ site.account }}</a><br />
+    <a href="{{ site.param.twitter }}/">{{ site.param.twitter }}</a><br />
+    {% if site.param.flickr %}
+      <a href="{{ site.param.flickr }}/">{{ site.param.flickr }}</a><br />
+    {% endif %}
+    {% if site.param.gpg %}
+      <a href="http://{{ site.param.url }}/{{ site.param.user }}.asc"><code>{{ site.param.gpg }}</code></a>
+    {% endif %}
+  </p>
+</div>
