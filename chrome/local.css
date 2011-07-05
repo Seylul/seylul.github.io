@@ -11,4 +11,5 @@ layout: nil
 body {
 background-color: none;
 background-image:url('../chrome/imagess.jpg');
+background-repeat:no-repeat;
 }
