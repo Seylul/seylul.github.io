@@ -14,7 +14,8 @@ Flaş diskimizin içi doluysa onları yedeklemekte fayda var çünkü
     Diski sil 
 diyerek format atıyoruz.Bu işlemden sonra 
 
-    Başlangıç diski oluştur diyoruz ve işlem sona eriyor.
+    Başlangıç diski oluştur 
+diyoruz ve işlem sona eriyor.
 
 Bilgisayarı kapatıp flaş diskimizi takıp tekrar başlatıyoruz.  
 *Install* ekranında *try ubuntu* seçeneğini seçiyoruz çünkü bölümlendirmeyi yapacağız.  
