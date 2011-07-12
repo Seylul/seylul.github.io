@@ -6,7 +6,7 @@ Github sitesi için arkaplan resmi değiştirilmek istenirse;
 sitenin klasörünün bulunduğu dizinden(xyz.github.com), chrome dizinine gelinir ve 
     
     local.css 
-içinde değişiklik yapılır.Peki bu değişiklik nasıl olmalıdır.Bunu yapabilmek için ufak bir 'css' kodu gerekli söyleki;
+içinde değişiklik yapılır.Peki bu değişiklik nasıl olmalıdır.Bunu yapabilmek için ufak bir *'css'* kodu gerekli söyleki;
 	
     body { //sayfanın body kısmında değişiklik yapacağımız için
     background-color: none; //arkaplan rengi boş (none) olacağı için
