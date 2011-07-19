@@ -19,6 +19,7 @@ adlı dosyadan da ayarları yapabiliriz. Fakat burada dikkat edilmesi gereken k�
 	
 	wp-config-sample.php  ---> wp-config.php
 olarak değiştirilmesidir.
- Dosya izinlerini de açtıktan sonra istediğiniz değişikliği yaparak tema üzerinde oynayabilirsiniz.Dosya izinlerini şu komutla açabilirsiniz 
+ Dosya izinlerini de açtıktan sonra istediğiniz değişikliği yaparak tema üzerinde oynayabilirsiniz.Dosya izinlerini şu komutla açabilirsiniz.
+
 	chmod 777 dizinadi 
 
