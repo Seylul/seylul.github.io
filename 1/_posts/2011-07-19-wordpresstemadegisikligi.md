@@ -2,7 +2,7 @@
 layout: post
 title: Wordpress tema ayarlarını değiştirme
 ---
-[Wordpress](http://www.wp-tr.org/ "wordpress")'i sitesinden wordpress'i 	/var/www	 dizini içine indiriyoruz.Yeni bir tema eklemek için indirdiğimiz temayı (internette ufak bi göz gezdirmeyle rahatlıkla bulunabilir), 
+[Wordpress](http://www.wp-tr.org/)'i sitesinden wordpress'i 	/var/www	 dizini içine indiriyoruz.Yeni bir tema eklemek için indirdiğimiz temayı (internette ufak bi göz gezdirmeyle rahatlıkla bulunabilir), 
 
 	var/www/wp-content/themes 
 dizinine atalım.    
