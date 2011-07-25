@@ -9,7 +9,7 @@ diyerek editörümüzü açalım. Her programın belli kuralları vardır ilk a�
 önemli kural yazacağımız dosyanın başlama cümlesinin şu şekilde olmasıdır.  
 
 	#!/bin/bash
-nasıl ki PHP'de  *<?* bu şekilde başlıyoruz,aynı şekilde bu da öyle..  Alt
+nasıl ki PHP'de **<?** bu şekilde başlıyoruz,aynı şekilde bu da öyle..  Alt
 satıra  
 
 	echo "Hello world"   
@@ -17,6 +17,6 @@ satıra
 yazıp kaydederek çıkalım ve konsola
 
 	bash scriptadi.sh
-yazıp ekran çıktısını *Hello world* şeklinde görelim.
+yazıp ekran çıktısını **Hello world** şeklinde görelim.
 
 
