@@ -2,7 +2,7 @@
 layout: post
 title: bash programlama
 ---
-Bu anlatım benim gibi ilk başlayanlar için, "hello word" aşaması yani :)  
+Bu anlatım benim gibi ilk başlayanlar için, _hello world_ aşaması yani :)  
 
 	$vi scriptadi.sh
 diyerek editörümüzü açalım. Her programın belli kuralları vardır ilk aşamadaki
