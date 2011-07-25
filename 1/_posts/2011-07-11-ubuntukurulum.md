@@ -4,7 +4,7 @@ title: Flaş'tan ubuntu kurulumu
 ---
 LGx120 netbook kullanıyorum ubuntu 11.04 yüklüydü çeşitli nedenlerden dolayı format atma ihtiyacı hissettim. Harici bir optik sürücüm de olmadığı için flaş diskten kurulum yaptım.
 
-Öncelikle [ubuntu](ubuntu.com)'yu bilgisayarımıza indiriyoruz. Burada 32bit mi 64bit mi dikkat edelim.
+Öncelikle [ubuntu](ubuntu.com/ )'yu bilgisayarımıza indiriyoruz. Burada 32bit mi 64bit mi dikkat edelim.
 
     Kontrol merkezi -> donanım ->başlangıç diski oluşturucu 
 şeklinde açıyoruz. Kaynak disk kalıbı yazan yerin sağ alt kısmındaki **Diğer** seçeneğine tıklayıp ISO dosyasını indirdiğimiz yeri seçiyoruz.
