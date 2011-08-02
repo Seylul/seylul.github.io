@@ -9,8 +9,9 @@ diyerek editörümüzü açalım. Her programın belli kuralları vardır ilk a�
 önemli kural yazacağımız dosyanın başlama cümlesinin şu şekilde olmasıdır.  
 
 	#!/bin/bash
-nasıl ki PHP'de "< ?" bu şekilde başlıyoruz,aynı şekilde bu da öyle..  Alt
-satıra  
+Bu satırın adı shebang satırıdır. Programımızı konsoldan çalıştıracağımız için
+bash dosyanın ilk satırına bakar ve bu satır sayesinde onun bash programı olduğunu anlayıp
+çalıştırır.Alt satıra;  
 
 	echo "Hello world"   
 	//ekrana bir çıktı vermek istediğimizde _echo_ komutunu kullanırız.
