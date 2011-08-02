@@ -99,7 +99,7 @@ param:
         # ilişkili girdiler
         related: Diğer Girdiler
         # logo (ör. http://00010011.github.com/assets/19/19-normal-128x128.png)
-        logo: /chrome/19/19-negative-128x128.png
+        logo: /chrome/19/19-altnegative-128x128.png
         # google site içi arama kutusu
         google: ~
         # google analytics takip numarası (ör. UA-1234567-8
