@@ -9,8 +9,8 @@ layout: nil
  */
 
 body {
-background-color: none;
-background-image:url('../chrome/arkaplan.gif');
+background-color: #d7afaf;
+/* background-image:url('../chrome/arkaplan.gif'); */
 background-size: 100%;
 
 }
