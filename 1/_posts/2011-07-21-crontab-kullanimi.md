@@ -34,7 +34,10 @@ crontab içeriği şu şekildedir:
 Mesela günün belirli 2 saatinde çalıştırmak istiyoruz. sabah 9 da ve öğlen 3 te:
 
 	00 09,15 * * * /root/scripts/backup.sh
-Son olarak yapılacak işlerin silinmesi için;
+Son olarak cron görevi girildikten sonra crontab'ı resetlemek gerekiyor. Bunun için;
+
+   /etc/init.d/crond.sh restart 
+yapılacak işlerin silinmesi için;
 
 	crontab -r
 listelenmesi için ;
