@@ -18,13 +18,12 @@ diyerek format atıyoruz.Bu işlemden sonra
 diyoruz ve işlem sona eriyor.
 
 Bilgisayarı kapatıp flaş diskimizi takıp tekrar başlatıyoruz.  
-*Install* ekranında *try ubuntu* seçeneğini seçiyoruz çünkü bölümlendirmeyi yapacağız.  
-**gparted** kurup bölümlemelere bakabiliriz.Bunun için
+*Install* ekranında *try ubuntu* seçeneğini seçiyoruz çünkü bölümlendirmeyi yapacağız.Bölümlendirme işlemini kurulum sırasında da yapabilirsiniz. Bunun içn gelen ekranda *install ubuntu* seçeneğini seçebiliriz.Try ubuntuyu seçtiysek sıradaki adım;
+**gparted** kurup bölümlemeleri düzenlemektir.Bunun için
 
 	sudo apt-get install gparted 
-yazmanız yeterli. Bilgisayar en fazla 4 bölüme ayrılabiliyor anladığım kadarıyla yeterli bölüm yoksa /extended(uzatılmış) bölüm açıp altına swap ve ext4 gibi alanları istediğimiz boyutta oluşturabiliriz.  
-Bu bölümlendirme işlemini kurulum sırasında yapmak istiyorsanız direkt   
-*Install* ekranından *install ubuntu* seçeneğini seçerek devam edebilirsiniz.
+yazmanız yeterli. Bilgisayar en fazla 4 bölüme ayrılabiliyor anladığım kadarıyla yeterli bölüm yoksa /extended(uzatılmış) bölüm açıp altına swap ve ext4 gibi alanları istediğimiz boyutta oluşturabiliriz.Ext4 alanı ubuntunun kurulacağı hard disk alanıdır. Boyutunu 20GB civarında tutmamız yeterli olur. Swap alanı, bilgisayar sabit diskte fazla işlem yaptığında yer kalmazsa kullanılan yerdir. Bir nevi RAM gibi. Ram'lerin kapasitesi şimdiki bilgisayarlarda fazla olduğu için bu alanı çok fazla tutmamıza gerek yok. 4GB RAM'li bir bilgisayarda swap alanını 256MB bile alabilirsiniz. Ram'i düşük olan bilgisayarlarda bu alanı Ram boyutunun 2 katı alınması önerilir. 
+Bölümleme işleminden sonra bilgisyarı tekrar başlatıp **Install** ekranından **install ubuntu** seçeneğini seçerek devam edebilirsiniz.
 
 Geri kalan işlemler basit zaten. Kurulum sonrasında **Ubuntu kurulumu sonrasında yapılması gerekenler** şeklinde basit bir google araması yapılıp uygulanırsa yerinde ve faydalı olur.
 
