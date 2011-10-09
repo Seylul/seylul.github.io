@@ -6,7 +6,8 @@ Konsola çeşitli komutlar yazdığımda;
 
 	warning: Insecure world writable dir /var in PATH, mode 040777
 uyarısını alıyordum.. /var dizini yolunda yazılabilir güvensiz dünya..?! 
-Ekran görüntüsü [bu](https://github.com/Seylul/seylul.github.com/raw/master/chrome/yazma.png) şekildedir.
+
+![Ekran görüntüsü](https://github.com/Seylul/seylul.github.com/raw/master/chrome/yazma.png) 
 Yapmak istediğim işlemi yine yapabiliyordum fakat komutu yazıp enter'a her bastığımda işlemi yapmadan önce bu uyarı çıkıyor mütakiben işlem gerçekleşiyordu. Biraz göz zevki bozuyor ve fazlılık yapıyordu nihayet ondan kurtulmanın yolunu buldum :)
 	
 	sudo chmod go-w /var
