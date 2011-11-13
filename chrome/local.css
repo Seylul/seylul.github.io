@@ -25,9 +25,9 @@ border-radius:25px;
 -webkit-box-shadow:0px 0px 19px #000000;
 box-shadow:0px 0px 19px #000000;
 
--moz-box-shadow:0px 0px 20px #0808ff;
--webkit-box-shadow:0px 0px 20px #0808ff;
-box-shadow:0px 0px 20px #0808ff;
+-moz-box-shadow:0px 0px 20px #000000;
+-webkit-box-shadow:0px 0px 20px #000000;
+box-shadow:0px 0px 20px #000000;
 
 
 background-image: -moz-linear-gradient(top, #ffffff, #FCDFFF);
