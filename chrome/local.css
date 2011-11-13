@@ -9,7 +9,7 @@ layout: nil
  */
 
 body {
-background-color: #ECE5B6;
+background-color: #C3FDB8;
 /* background-image:url('../chrome/arkaplan.gif'); */
 background-size: 100%;
 
@@ -25,13 +25,13 @@ border-radius:18px;
 -webkit-box-shadow:0px 0px 19px #000000;
 box-shadow:0px 0px 19px #000000;
 
-background-image: -moz-linear-gradient(top, #ffffff, #ffb5f4);
-background-image: -webkit-gradient(linear, center top, center bottom, from(#ffffff), to(#ffb5f4));
-background-image: -o-linear-gradient(top, #ffffff, #ffb5f4);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffb5f4');
+background-image: -moz-linear-gradient(top, #ffffff, #F9966B);
+background-image: -webkit-gradient(linear, center top, center bottom, from(#ffffff), to(#F9966B));
+background-image: -o-linear-gradient(top, #ffffff, #F9966B);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#F9966B');
 
--ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffb5f4')";
-background-image: linear-gradient(top, #ffffff, #ffb5f4);
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#F9966B')";
+background-image: linear-gradient(top, #ffffff, #F9966B);
 -moz-background-clip: padding-box;
 -webkit-background-clip: padding-box;
 background-clip: padding-box;
