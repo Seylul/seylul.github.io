@@ -25,6 +25,10 @@ border-radius:18px;
 -webkit-box-shadow:0px 0px 19px #000000;
 box-shadow:0px 0px 19px #000000;
 
+-moz-box-shadow:0px 0px 20px #fde3ff;
+-webkit-box-shadow:0px 0px 20px #fde3ff;
+box-shadow:0px 0px 20px #fde3ff;
+
 background-image: -moz-linear-gradient(top, #ffffff, #FCDFFF);
 background-image: -webkit-gradient(linear, center top, center bottom, from(#ffffff), to(#FCDFFF));
 background-image: -o-linear-gradient(top, #ffffff, #FCDFFF);
