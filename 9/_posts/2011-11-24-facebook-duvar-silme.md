@@ -7,4 +7,6 @@ title: Facebook Duvarının Tamamını Silme
  istiyorsunuz, fakat teker teker silme işlemi zor oluyorsa firefoxun imacros
  eklentisi bize yardımcı oluyor :)
  [Bu](http://www.youtube.com/watch?v=2MoJi9dJGv8) video gayet açıklayıcı, buyrunuz :)
+ Bu işlemi sadece facebook için değil başka uygulamalar için kullanabileceğinizi
+ eklentiyi kullanınca farkedebilirsiniz.
 
