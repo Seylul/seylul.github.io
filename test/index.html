@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Bilgisayar Mühendisliği YKB İşbirliği Tanıtımı</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.parallax-1.1.js"></script>
+<script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
+<script src="scripts/jquery.easing.1.3.js"></script>
+<script src="scripts/jquery.scrollorama.js"></script>
+<script src="scripts/jquery.scrolldeck.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	//$('#nav').localScroll(800);
+	
+	RepositionNav();
+	
+	$(window).resize(function(){
+		RepositionNav();
+	});	
+	
+	//.parallax(xPosition, adjuster, inertia, outerHeight) options:
+	//xPosition - Horizontal position of the element
+	//adjuster - y position to start from
+	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+	$('#intro').parallax("50%", 0, 0.1, true);
+	$('#second').parallax("50%", 0, 0.1, true);
+	$('.bg').parallax("50%", 2500, 0.4, true);
+	$('#third').parallax("50%", 2750, 0.3, true);
+	
+	var deck = new $.scrolldeck({
+		slides: '.slide',
+		buttons: '#nav li a',
+		easing: 'easeInOutExpo'
+	});
+
+})
+</script>
+</head>
+
+<body>
+	<ul id="nav">
+		<li><a href="#intro" title="Next Section"></a></li>
+	    <li><a href="#second" title="Next Section"></a></li>
+	    <li><a href="#third" title="Next Section"></a></li>
+	    <li><a href="#fifth" title="Next Section"></a></li>
+	    <li><a href="#six" title="Next Section"></a></li>
+	</ul>
+	
+	<div id="intro" class="slide">
+		<div class="story">
+			<div class="sag">
+				<img src="images/ykb-1.jpg" /><br><br><br>
+	        </div>
+			<div class="sol">
+				<img src="images/ykb-4.jpg" /><br><br><br>
+			</div>
+	    </div> <!--.story-->
+	</div> <!--#intro-->
+	
+	<div id="second" class="slide">
+		<div class="story">
+			<div class="sag">
+				<img src="images/ykb-5.jpg" /><br><br><br>
+				<img src="images/ykb-6.jpg" /><br><br><br>
+				<img src="images/ykb-8.jpg" /><br><br><br>
+	        </div>
+	        <div class="sol">
+				<img src="images/ykb-2.jpg" /><br><br><br>
+				<img src="images/ykb-7.jpg" /><br><br><br>
+
+	        </div>	    	
+	    </div> <!--.story-->
+	    
+	</div> <!--#second-->
+	
+	<div id="third" class="slide">
+		<div class="story">
+			<div class="sag">
+				<img src="images/ykb-9.jpg" /><br><br><br>
+	        </div>
+			<div class="sol">
+				<img src="images/ykb-11.jpg" /><br><br><br>
+	        </div>	        
+	    </div> <!--.story-->
+	</div> <!--#third-->
+	
+	<div id="fifth" class="slide">
+		<div class="story">
+			<div class="sag">
+				<img src="images/ykb-14.jpg" /><br><br><br>
+	        </div>
+			<div class="sol">
+				<img src="images/ykb-12.jpg" /><br><br><br>
+				<img src="images/ykb-15.jpg" /><br><br><br>
+	        </div>	    
+	    </div> <!--.story-->
+	</div> <!--#fifth-->
+
+	<div id="six" class="slide">
+		<div class="story">
+			<div class="sag">
+				<img src="images/ykb-13.jpg" /><br><br><br>
+	        </div>
+			<div class="sol">
+				<img src="images/ykb-10.jpg" /><br><br><br>
+	        </div>
+	    </div> <!--.story-->
+	</div> <!--#third-->
+
+</body>
+</html>
