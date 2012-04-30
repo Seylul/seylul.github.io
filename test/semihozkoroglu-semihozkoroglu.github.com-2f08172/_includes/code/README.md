@@ -1,1 +1,0 @@
-Kodlar bu dizinde.

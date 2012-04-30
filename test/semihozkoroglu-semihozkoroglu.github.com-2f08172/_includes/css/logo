@@ -1,8 +1,0 @@
-#logo {
-  display:block;
-  position: relative;
-  float: right;
-  vertical-align: top;
-  width: 128px;
-  height: 128px;
-}
