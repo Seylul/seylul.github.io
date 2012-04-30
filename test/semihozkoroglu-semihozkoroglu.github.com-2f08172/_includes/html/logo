@@ -1,0 +1,3 @@
+{% unless site.param.logo == null %}
+<a href="{{ site.param.url }}/" title="logo" id="logo" style="background-image:url('{{ site.param.logo }}');"></a>
+{% endunless %}

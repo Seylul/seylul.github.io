@@ -1,0 +1,7 @@
+{% unless site.param.feed == null %}
+<div class="rss">
+  <a href="{{ site.param.feed }}">
+    <img src="{{ site.assets }}/sembol/feed-64.png" alt="Özet Akışı" />
+  </a>
+</div>
+{% endunless %}
