@@ -48,14 +48,14 @@ Hemen burada kendi yaptığım bir hataya düşmemeniz için uyarı da bulunayı
 	$kill -9 process number     
 ilk komutun çıktısındaki verilerden java processinin numarasını buraya yazarak o süreci sonlandırıyoruz. Bu kadarcık.
 
-Play'de oluşturduğumuz projemizin içindeki dosyalara göz gezdirecek olursak:
-- app  
+Play'de oluşturduğumuz projemizin içindeki dosyalara göz gezdirecek olursak:  
+- app    
   + app/controller  
-Controller bir java sınıfıdır. Bir HTTP (request) isteği alındığında action çağırılır. Action methodu HTTP isteğinden gelen ilgili veriyi ayıklar,okur ve model nesnesini günceller ve HTTP yanıtı(response) ile geri gönderir.
+Controller bir java sınıfıdır. Bir HTTP (request) isteği alındığında action çağırılır. Action methodu HTTP isteğinden gelen ilgili veriyi ayıklar,okur ve model nesnesini günceller ve HTTP yanıtı(response) ile geri gönderir.  
   + app/model  
-Burada veri yapıları ve her uygulama işlecinin işlemleri yer alır.
+Burada veri yapıları ve her uygulama işlecinin işlemleri yer alır.  
   + app/views  
-Burada HTML,XML,JSON gibi model sunumu yapan şablonlar yer alıyor.
+Burada HTML,XML,JSON gibi model sunumu yapan şablonlar yer alıyor.  
 
 Play (request-response) istek-yanıt mantığıyla çalışır.
 1.HTTP isteği framework tarafından alınır.
