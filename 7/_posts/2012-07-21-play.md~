@@ -27,7 +27,7 @@ uygulamamızın çalışacağı klasörün içine de eclipse de projemizi göreb
 	$play run 
 ´play run´ ile de play'i çalıştırmış oluyoruz. 
 
-Eclipse'i ilk açtığımızda karşımıza  
+Eclipse'i ilk açtığımızda karşımıza 
 ![Workspace](https://github.com/Seylul/seylul.github.com/raw/master/chrome/workspacelauncher.png)
 ekranı geliyor. Eclipse'i açmadan önce bir yerde workspace adlı bir dosya açmamız gerekiyor ve bu ekran geldiğinde de o dosyanın yolunu seçmeliyiz çünkü eclipse çalışmaları o dosyaya depoluyor. Bu adımdan sonra play projemizi açmak için:
 	
