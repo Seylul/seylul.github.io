@@ -14,4 +14,4 @@ title: Raphael kütüphanesi
 	 ScaleRaphael('map', 1030, 820)  
    Bunu da haritanın alanını oluştururken kullanıyoruz. Adından da anlaşılacağı gibi ScaleRaphael ölçekleme yapıyor. `map´ elementini x=1030 y=820 olacak şekilde ölçekliyor.
 
-![library](<img src="https://github.com/Seylul/seylul.github.com/raw/master/chrome/books.png" width="100" height="100">)  
+
