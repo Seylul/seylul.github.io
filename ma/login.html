@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+        </title>
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.js">
+        </script>
+        <script src="my.js">
+        </script>
+    </head>
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="page1">
+            <div id="Home" data-theme="e" data-role="header">
+                <h3 id="Log_in">
+                    Log in
+                </h3>
+            </div>
+            <div data-role="content">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="Email_login">
+                            Email Adress :
+                        </label>
+                        <input name="" id="Email_login" placeholder="" value="" type="email" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="password_login">
+                            Password :
+                        </label>
+                        <input name="" id="password_login" placeholder="" value="" type="password" />
+                    </fieldset>
+                </div>
+                <div>
+                    <a id="Forgot_password" href="" data-transition="fade">
+                        Forgot your password?
+                    </a>
+                </div>
+                <a id="Login_login" data-role="button" data-theme="e" href="#page1" data-icon="check" data-iconpos="right">
+                    Log in
+                </a>
+                <a id="Register_now" data-role="button" data-theme="e" href="#page1">
+                    Register Now
+                </a>
+            </div>
+        </div>
+        <script>
+            //App custom javascript
+        </script>
+    </body>
+</html>
