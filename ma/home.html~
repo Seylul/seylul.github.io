@@ -31,21 +31,21 @@
                 </div>
                 <ul id="Log_in" data-role="listview" data-divider-theme="e" data-inset="true">
                     <li data-theme="e">
-                        <a href="#page1" data-transition="slide">
+                        <a href="http://seylul.github.com/ma/login" data-transition="slide">
                             Log in
                         </a>
                     </li>
                 </ul>
                 <ul id="Help" data-role="listview" data-divider-theme="e" data-inset="true">
                     <li data-theme="e">
-                        <a href="#page1" data-transition="slide">
+                        <a href="http://seylul.github.com/ma/help" data-transition="slide">
                             Help
                         </a>
                     </li>
                 </ul>
                 <ul id="About_application" data-role="listview" data-divider-theme="e" data-inset="true">
                     <li data-theme="e">
-                        <a href="#page1" data-transition="slide">
+                        <a href="http://seylul.github.com/ma/about" data-transition="slide">
                             About Application
                         </a>
                     </li>
