@@ -48,7 +48,7 @@
                     <div class="ui-block-a">
                     </div>
                     <div class="ui-block-b">
-                        <input id="About" type="submit" data-theme="e" data-icon="info" data-iconpos="left" value="About" />
+                        <input id="About" type="submit" data-theme="e" data-icon="info" data-iconpos="left" value="About"  href="http://seylul.github.com/ma/about"/>
                     </div>
                 </div>
             </div>
