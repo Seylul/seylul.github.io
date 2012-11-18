@@ -27,21 +27,21 @@
             </div>
             <div data-role="content">
                 <div style="width: 288px; height: 200px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;">
-                    <img id="home_image" src="https://github.com/Seylul/seylul.github.com/blob/master/ma/home.png" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px" />
+                    <img id="home_image" src="https://github.com/Seylul/seylul.github.com/blob/master/chrome/home.png" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px" />
                 </div>
                 <div id="Block" class="ui-grid-a">
                     <div class="ui-block-a">
-                        <input id="Calculate" type="submit" data-theme="e" data-icon="star" data-iconpos="right" value="Calculate" />
+                        <input id="Calculate" type="submit" data-theme="e" data-icon="star" data-iconpos="right" value="Calculate"  href="http://seylul.github.com/ma/cal_route"/>
                     </div>
                     <div class="ui-block-b">
                     </div>
                     <div class="ui-block-a">
                     </div>
                     <div class="ui-block-b">
-                        <input id="Map" type="submit" data-theme="e" data-icon="grid" data-iconpos="left" value="Map" />
+                        <input id="Map" type="submit" data-theme="e" data-icon="grid" data-iconpos="left" value="Map" href="http://seylul.github.com/ma/density_map" />
                     </div>
                     <div class="ui-block-a">
-                        <input id="Help" type="submit" data-theme="e" data-icon="alert" data-iconpos="right" value="Help" />
+                        <input id="Help" type="submit" data-theme="e" data-icon="alert" data-iconpos="right" value="Help"  href="http://seylul.github.com/ma/help" />
                     </div>
                     <div class="ui-block-b">
                     </div>

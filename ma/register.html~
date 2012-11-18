@@ -69,7 +69,7 @@
                         </label>
                     </fieldset>
                 </div>
-                <a data-role="button" data-theme="e" href="http://seylul.github.com/ma/home2" data-icon="check" data-iconpos="right">
+                <a data-role="button" data-theme="e" href="#page1" data-icon="check" data-iconpos="right">
                     Accept
                 </a>
             </div>
