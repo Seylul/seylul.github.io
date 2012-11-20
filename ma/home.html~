@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+        </title>
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.js">
+        </script>
+        <script src="my.js">
+        </script>
+    </head>
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="page1">
+            <div id="Home" data-theme="e" data-role="header">
+                <h3 id="Home">
+                    S.T.O.R
+                </h3>
+            </div>
+            <div data-role="content">
+                <div style="width: 288px; height: 200px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;">
+                    <img id="Home_image" src="https://raw.github.com/Seylul/seylul.github.com/master/chrome/home.png" alt="image" style="width: 288px; height: 200px" />
+                </div>
+                <ul id="Log_in" data-role="listview" data-divider-theme="e" data-inset="true">
+                    <li data-theme="e">
+                        <a href="http://seylul.github.com/ma/login" data-transition="slide">
+                            Log in
+                        </a>
+                    </li>
+                </ul>
+                <ul id="Help" data-role="listview" data-divider-theme="e" data-inset="true">
+                    <li data-theme="e">
+                        <a href="http://seylul.github.com/ma/help" data-transition="slide">
+                            Help
+                        </a>
+                    </li>
+                </ul>
+                <ul id="About_application" data-role="listview" data-divider-theme="e" data-inset="true">
+                    <li data-theme="e">
+                        <a href="http://seylul.github.com/ma/about" data-transition="slide">
+                            About Application
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            //App custom javascript
+        </script>
+    </body>
+</html>

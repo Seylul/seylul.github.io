@@ -20,41 +20,38 @@
     <body>
         <!-- Home -->
         <div data-role="page" id="page1">
-            <div data-theme="e" data-role="header">
-                <h3 id="Calculate_route">
-                    Calculate route
+            <div id="Home" data-theme="e" data-role="header" data-icon="home" data-iconpos="left">
+                <h3 id="Log_in">
+                    Log in
                 </h3>
             </div>
             <div data-role="content">
                 <div data-role="fieldcontain">
                     <fieldset data-role="controlgroup">
-                        <label for="origin">
-                            Origin :
+                        <label for="Email_login">
+                            Email Adress :
                         </label>
-                        <input name="" id="origin" placeholder="" value="" type="text" />
+                        <input name="" id="Email_login" placeholder="" value="" type="email" />
                     </fieldset>
                 </div>
                 <div data-role="fieldcontain">
                     <fieldset data-role="controlgroup">
-                        <label for="except_of">
-                            Except of:
+                        <label for="password_login">
+                            Password :
                         </label>
-                        <input name="" id="except_of" placeholder="" value="" type="text" />
+                        <input name="" id="password_login" placeholder="" value="" type="password" />
                     </fieldset>
                 </div>
-                <div data-role="fieldcontain">
-                    <fieldset data-role="controlgroup">
-                        <label for="destination">
-                            Destination :
-                        </label>
-                        <input name="" id="destination" placeholder="" value="" type="text" />
-                    </fieldset>
+                <div>
+                    <a id="Forgot_password" href="http://seylul.github.com/ma/forgot_pas" data-transition="fade">
+                        Forgot your password?
+                    </a>
                 </div>
-                <a id="shortest" data-role="button" data-inline="true" data-theme="e" href="#page1">
-                    Shortest
+                <a id="Login_login" data-role="button" data-theme="e" href="http://seylul.github.com/ma/home2" data-icon="check" data-iconpos="right">
+                    Log in
                 </a>
-                <a id="fastest" data-role="button" data-inline="true" data-theme="e" href="#page1">
-                    The Fastest
+                <a id="Register_now" data-role="button" data-theme="e" href="http://seylul.github.com/ma/register">
+                    Register Now
                 </a>
             </div>
         </div>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+        </title>
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.js">
+        </script>
+        <script src="my.js">
+        </script>
+    </head>
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="page1">
+            <div id="Home" data-theme="e" data-role="header">
+                <h3 id="Home">
+                    S.T.O.R
+                </h3>
+            </div>
+            <div data-role="content">
+                <div style="width: 288px; height: 200px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;">
+                    <img id="home_image" src="https://raw.github.com/Seylul/seylul.github.com/master/chrome/home.png" alt="image" style="width: 288px; height: 200px" />
+                </div>
+                <div id="Block" class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <input id="Calculate" type="submit" data-theme="e" data-icon="star" data-iconpos="right" value="Calculate" /><a href="http://seylul.github.com/ma/cal_route">
+                    </div>
+                    <div class="ui-block-b">
+                    </div>
+                   
+                    <div class="ui-block-a">
+                        
+                    </div>
+                    <div class="ui-block-b">
+<input id="Help" type="submit" data-theme="e" data-icon="alert" data-iconpos="right" value="Help"  href="http://seylul.github.com/ma/help" />
+                    </div>
+                    <div class="ui-block-a">
+<input id="About" type="submit" data-theme="e" data-icon="info" data-iconpos="left" value="About"  href="http://seylul.github.com/ma/about"/>
+                    </div>
+                    <div class="ui-block-b">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            //App custom javascript
+        </script>
+    </body>
+</html>
