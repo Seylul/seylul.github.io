@@ -1,5 +1,6 @@
   var directionDisplay;
   var rulerpoly;
+  var resetControl = false;
   var i = 0;
   var index = 0;
   var response;
@@ -30,8 +31,8 @@
 		        mapTypeId: google.maps.MapTypeId.ROADMAP
 		    };
 		    map = new google.maps.Map(document.getElementById("map_canvas"), options);
-			//var trafficLayer = new google.maps.TrafficLayer();
-			//trafficLayer.setMap(map);
+			var trafficLayer = new google.maps.TrafficLayer();
+			trafficLayer.setMap(map);
 		    addMarker(window.origin);
 			addCircle(window.origin);
 		    
@@ -40,22 +41,12 @@
           		preserveViewport: true,
           		draggable: true
        		});
-			//directionsDisplay.setPanel(document.getElementById("directionsPanel"));
 
 			google.maps.event.addListener(window.map, 'click', function(event) {
 				if (window.destination == null) {
 					destination = event.latLng;
 					addMarker(window.destination);
-				} 
-				else {
-					if (waypoints.length < 9) {
-						waypoints.push({ location: destination, stopover: true });
-						destination = event.latLng;
-						addMarker(destination);
-					} else {
-					alert("Maximum number of waypoints reached");
-					}
-			
+					resetControl = false;
 				}
 				calcRoute();
 			});// google map listener
@@ -97,18 +88,7 @@
       return;
     }
     
-    var mode;
-    switch (document.getElementById("mode").value) {
-      case "bicycling":
-        mode = google.maps.DirectionsTravelMode.BICYCLING;
-        break;
-      case "driving":
-        mode = google.maps.DirectionsTravelMode.DRIVING;
-        break;
-      case "walking":
-        mode = google.maps.DirectionsTravelMode.WALKING;
-        break;
-    }
+    var mode = google.maps.DirectionsTravelMode.DRIVING;
     
     var request = {
         origin: window.origin,
@@ -116,9 +96,9 @@
         waypoints: waypoints,
         travelMode: mode,
 		provideRouteAlternatives: true,
-        optimizeWaypoints: document.getElementById('checkbox7').checked,
-        avoidHighways: document.getElementById('checkbox9').checked,
-        avoidTolls: document.getElementById('checkbox10').checked
+        optimizeWaypoints: true,
+        avoidHighways: true,
+        avoidTolls: true
     };
     
     directionsService.route(request, function(response, status) {
@@ -132,52 +112,47 @@
 			$("#page1 ul").append("<li class=\"ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-corner-bottom ui-li-last ui-btn-up-c\" data-theme=\"c\" data-corners=\"false\" data-shadow=\"true\" data-iconshadow=\"true\" data-wrapperels=\"div\" data-icon=\"arrow-r\" data-iconpos=\"right\"><div class=\"ui-btn-inner ui-li\"><div class=\"ui-btn-text\"><a class=\"ui-link-inherit\" data-transition=\"pop\" href=\"#\"> <div id=" + r + " onClick=\"reply_click(this.id)\"><strong>" + response.routes[r].summary + "</strong>" + "  " + response.routes[r].legs[0].distance.text + " - " + "about " + response.routes[r].legs[0].duration.text + "<img src=\"icons/arrow.png\"></div></a></div><span class=\"ui-icon ui-icon-arrow-r ui-icon-shadow\">&nbsp;</span></div></li>");
 		}
 		draw(window.response.routes[index].overview_path);
-		//document.getElementById('s').innerHTML = 
-            //JSON.stringify(response.routes[1].legs[0].steps[0].instructions.toSource(), null, 4);
-        //directionsDisplay.setDirections(response);
       }
 	  else{
 	  	alert("This travel mode does note exist for that way!");
 		return;
 	  }
-	  //clearMarkers();
     });
 	directionsVisible = true;
   }
   function addway(){
-	way.push("<img src=\"icons/way.png\">  " + response.routes[index].legs[0].steps[i].instructions);
-	i = i + 1;
-	$("#page1 ul li").remove();
-	$("#page1 ul").append("<li class=\"ui-li ui-li-divider ui-bar-c ui-corner-top ui-corner-bottom ui-li-last\" role=\"heading\" data-role=\"list-divider\"> Adress Directions </li>");
-	for( var t in way){
-		$("#page1 ul").append("<li class=\"ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-corner-bottom ui-li-last ui-btn-up-c\" data-theme=\"c\" data-corners=\"false\" data-shadow=\"true\" data-iconshadow=\"true\" data-wrapperels=\"div\" data-icon=\"arrow-r\" data-iconpos=\"right\"><div class=\"ui-btn-inner ui-li\"><div class=\"ui-btn-text\"><a class=\"ui-link-inherit\" data-transition=\"pop\" href=\"#\">"+ way[t] +"</a></div><span class=\"ui-icon ui-icon-arrow-r ui-icon-shadow\">&nbsp;</span></div></li>");
+	if( resetControl ){
+		alert("Please select destination address");
+	}
+	else{
+		way.push("<img src=\"icons/way.png\">  " + response.routes[index].legs[0].steps[i].instructions);
+		i = i + 1;
+		$("#page1 ul li").remove();
+		$("#page1 ul").append("<li class=\"ui-li ui-li-divider ui-bar-c ui-corner-top ui-corner-bottom ui-li-last\" role=\"heading\" data-role=\"list-divider\"> Adress Directions </li>");
+		for( var t in way){
+			$("#page1 ul").append("<li class=\"ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-corner-bottom ui-li-last ui-btn-up-c\" data-theme=\"c\" data-corners=\"false\" data-shadow=\"true\" data-iconshadow=\"true\" data-wrapperels=\"div\" data-icon=\"arrow-r\" data-iconpos=\"right\"><div class=\"ui-btn-inner ui-li\"><div class=\"ui-btn-text\"><a class=\"ui-link-inherit\" data-transition=\"pop\" href=\"#\">"+ way[t] +"</a></div><span class=\"ui-icon ui-icon-arrow-r ui-icon-shadow\">&nbsp;</span></div></li>");
+		}
 	}
   }
   function routes(){
-	window.rulerpoly.setMap(null);
-	$("#page1 ul li").remove();
-	$("#page1 ul").append("<li class=\"ui-li ui-li-divider ui-bar-c ui-corner-top ui-corner-bottom ui-li-last\" role=\"heading\" data-role=\"list-divider\"> Suggestion Route </li>");
-	for( var r in response.routes)
-	{
-		$("#page1 ul").append("<li class=\"ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-corner-bottom ui-li-last ui-btn-up-c\" data-theme=\"c\" data-corners=\"false\" data-shadow=\"true\" data-iconshadow=\"true\" data-wrapperels=\"div\" data-icon=\"arrow-r\" data-iconpos=\"right\"><div class=\"ui-btn-inner ui-li\"><div class=\"ui-btn-text\"><a class=\"ui-link-inherit\" data-transition=\"pop\" href=\"#\"> <div id=" + r + " onClick=\"reply_click(this.id)\"><strong>" + response.routes[r].summary + "</strong>" + "  " + response.routes[r].legs[0].distance.text + " - " + "about " + response.routes[r].legs[0].duration.text + "<img src=\"icons/arrow.png\"></div></a></div><span class=\"ui-icon ui-icon-arrow-r ui-icon-shadow\">&nbsp;</span></div></li>");
+	if( resetControl ){
+		alert("Please select destination address");
 	}
-	draw(window.response.routes[index].overview_path);
+	else{
+		window.rulerpoly.setMap(null);
+		$("#page1 ul li").remove();
+		$("#page1 ul").append("<li class=\"ui-li ui-li-divider ui-bar-c ui-corner-top ui-corner-bottom ui-li-last\" role=\"heading\" data-role=\"list-divider\"> Suggestion Route </li>");
+		for( var r in response.routes)
+		{
+			$("#page1 ul").append("<li class=\"ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-corner-bottom ui-li-last ui-btn-up-c\" data-theme=\"c\" data-corners=\"false\" data-shadow=\"true\" data-iconshadow=\"true\" data-wrapperels=\"div\" data-icon=\"arrow-r\" data-iconpos=\"right\"><div class=\"ui-btn-inner ui-li\"><div class=\"ui-btn-text\"><a class=\"ui-link-inherit\" data-transition=\"pop\" href=\"#\"> <div id=" + r + " onClick=\"reply_click(this.id)\"><strong>" + response.routes[r].summary + "</strong>" + "  " + response.routes[r].legs[0].distance.text + " - " + "about " + response.routes[r].legs[0].duration.text + "<img src=\"icons/arrow.png\"></div></a></div><span class=\"ui-icon ui-icon-arrow-r ui-icon-shadow\">&nbsp;</span></div></li>");
+		}
+		draw(window.response.routes[index].overview_path);
+	}
   }
   function draw(path){
 	  
-	var mode;
-    switch (document.getElementById("mode").value) {
-      case "bicycling":
-        mode = google.maps.DirectionsTravelMode.BICYCLING;
-        break;
-      case "driving":
-        mode = google.maps.DirectionsTravelMode.DRIVING;
-        break;
-      case "walking":
-        mode = google.maps.DirectionsTravelMode.WALKING;
-        break;
-    }
-    
+	var mode = google.maps.DirectionsTravelMode.DRIVING;
+
 	allpath = [];
 	for( var p in path)
 	{
@@ -200,7 +175,6 @@
 	index = clicked_id;
 	$("#page1 ul li").remove();
 	addway();
-//	document.getElementById('directionsPanel').innerHTML = "";
 	window.rulerpoly.setMap(null);
 	draw(window.response.routes[clicked_id].overview_path);
   }
@@ -225,11 +199,11 @@
   }
   
   function reset() {
-    clearMarkers();
-    clearWaypoints();
-    directionsDisplay.setMap(null);
-    directionsDisplay.setPanel(null);
-    directionsDisplay = new google.maps.DirectionsRenderer();
-    directionsDisplay.setMap(map);
-    directionsDisplay.setPanel(document.getElementById("directionsPanel"));    
+    destination = null;
+    for (var i = 1; i < markers.length; i++) {
+      markers[i].setMap(null);
+    }
+    rulerpoly.setMap(null);
+    resetControl = true;
+    $("#page1 ul li").remove();
   }
