@@ -20,7 +20,7 @@
     <body onload="initialize()">
         <!-- Home -->
         <div data-role="page" id="page1">
-            <div data-theme="e" data-role="header">
+            <div data-theme="a" data-role="header">
                 <h3>
                     Calculate Route
                 </h3>
@@ -29,11 +29,33 @@
                 <div id="map_canvas" style="width: 100%px; height: 200px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;">
                     <div style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px" /></div>
                 </div>
-                <ul data-role="listview" data-divider-theme="e" data-inset="true">
+                <ul data-role="listview" data-divider-theme="c" data-inset="true">
                 </ul>
-                <input id="next" type="submit" value="Next Directions" onclick="addway()" data-theme="e"/>
-                <input id="next" type="submit" value="Previous Routes" onclick="routes()" data-theme="e"/>
-		 <input type="submit" value="Reset" onclick="reset()" data-theme="e" />
-                
+                <input id="next" type="submit" value="Next Directions" onclick="addway()"/>
+                <input id="next" type="submit" value="Previous Routes" onclick="routes()"/>
+                <div id="s"></div>
+                <div class="ui-grid-a" data-mini="true">
+                    <div class="ui-block-a">
+                        <div id="checkboxes7" data-role="fieldcontain">
+                            <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="ui-block-b">
+                        <div data-role="fieldcontain">
+                        </div>
+                    </div>
+                    <div class="ui-block-a">
+                        <div id="checkboxes9" data-role="fieldcontain">
+                            <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="ui-block-b">
+                        <input type="submit" value="Reset" onclick="reset()" />
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
