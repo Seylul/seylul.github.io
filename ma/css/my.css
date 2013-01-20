@@ -1,0 +1,19 @@
+#map_div {
+	height: 100%;
+}
+#map_canvas {
+	box-shadow: 1px 1px 4px 2px rgba(0,0,0 ,0.7);
+}
+#directionsPanel{
+	float: right;
+	height: 80%;
+	width: 25%;
+	margin: 10px;
+	box-shadow: 1px 1px 4px 2px rgba(0,0,0 ,0.7);
+	overflow: auto;
+}
+#s{
+	text-align:center;
+	float: left;
+	margin: 10px;
+}
