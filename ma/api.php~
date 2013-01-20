@@ -1,0 +1,36 @@
+<?php
+$host="http://yoruserver.com"; // Host name 
+$username="example"; // Mysql username 
+$password="example"; // Mysql password 
+$db_name="db_name"; // Database name 
+$tbl_name="users"; // Table name
+
+// Connect to server and select databse.
+mysql_connect("$host", "$username", "$password")or die("cannot connect"); 
+mysql_select_db("$db_name")or die("cannot select DB");
+
+// username and password sent  
+$user_name=$_POST['user_name']; 
+$user_pass=$_POST['user_pass'];
+
+// To protect MySQL injection 
+$myusername = stripslashes($myusername);
+$mypassword = stripslashes($mypassword);
+$myusername = mysql_real_escape_string($myusername);
+$mypassword = mysql_real_escape_string($mypassword);
+
+
+if(isset($_POST['username']) and isset($_POST['password'])) {
+ 
+ // do logic for logining in (usually query your db)
+ if ($_POST['username'] == 'user_name' and $_POST['password'] == 'user_pass') {
+ $data['success'] = true;
+ $data['message'] = 'Login succesful';
+ } else {
+ $data['success'] = false;
+ $data['message'] = 'Login failed';
+ }
+ // return json
+ echo json_encode($data);
+}
+?>

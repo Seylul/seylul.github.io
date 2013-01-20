@@ -18,8 +18,6 @@
         </script>
     </head>
     <body>
-<form id="myForm" action="login.php" method="POST">
- 
         <!-- Home -->
         <div data-role="page" id="page1">
             <div id="Home" data-theme="e" data-role="header" data-icon="home" data-iconpos="left">
@@ -60,6 +58,5 @@
         <script>
             //App custom javascript
         </script>
-</form>
     </body>
 </html>
