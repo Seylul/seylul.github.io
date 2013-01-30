@@ -24,8 +24,12 @@
                 <h3 id="Register">
                     Register
                 </h3>
+		<a data-role="button" data-theme="e" href="index.html" data-icon="home" data-iconpos="left" class="ui-btn-left">
+                    Home
+                </a>
             </div>
             <div data-role="content">
+				<form id="myForm" action="register.php" method="POST">
                 <div data-role="fieldcontain">
                     <fieldset data-role="controlgroup">
                         <label for="Email_register">
@@ -42,15 +46,7 @@
                         <input name="" id="password_register" placeholder="" value="" type="password" />
                     </fieldset>
                 </div>
-                <div data-role="fieldcontain">
-                    <fieldset data-role="controlgroup">
-                        <label for="phonenumber_register">
-                            Phone Number:
-                        </label>
-                        <input name="" id="phonenumber_register" placeholder="" value="" type="tel" />
-                    </fieldset>
-                </div>
-                <div id="Platform" data-role="fieldcontain">
+               <div id="Platform" data-role="fieldcontain">
                     <fieldset data-role="controlgroup" data-type="vertical">
                         <legend>
                             Phone Platform:
@@ -69,13 +65,12 @@
                         </label>
                     </fieldset>
                 </div>
-                <a data-role="button" data-theme="e" href="http://seylul.github.com/ma/home2" data-icon="check" data-iconpos="right">
+				<button id="submit" data-theme="e" data-icon="check" data-iconpos="right" ><a id="Login_login" data-role="button" >
                     Accept
-                </a>
+                </a></button>
             </div>
         </div>
-        <script>
-            //App custom javascript
-        </script>
+		<div id="ack"></div>
+		<script type="text/javascript" src="my_register.js"></script>
     </body>
 </html>

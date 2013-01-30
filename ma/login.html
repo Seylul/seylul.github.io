@@ -18,48 +18,49 @@
         </script>
     </head>
     <body>
-<form id="myForm" action="login.php" method="POST">
- 
         <!-- Home -->
         <div data-role="page" id="page1">
             <div id="Home" data-theme="e" data-role="header" data-icon="home" data-iconpos="left">
                 <h3 id="Log_in">
                     Log in
                 </h3>
+		 <a data-role="button" data-theme="e" href="index.html" data-icon="home" data-iconpos="left" class="ui-btn-left">
+                    Home
+                </a>
             </div>
             <div data-role="content">
-                <div data-role="fieldcontain">
-                    <fieldset data-role="controlgroup">
-                        <label for="Email_login">
-                            Email Adress :
-                        </label>
-                        <input name="" id="Email_login" placeholder="" value="" type="email" />
-                    </fieldset>
-                </div>
-                <div data-role="fieldcontain">
-                    <fieldset data-role="controlgroup">
-                        <label for="password_login">
-                            Password :
-                        </label>
-                        <input name="" id="password_login" placeholder="" value="" type="password" />
-                    </fieldset>
-                </div>
+				<form id="myForm" action="login.php" method="POST">
+					<div data-role="fieldcontain">
+						<fieldset data-role="controlgroup">
+							<label for="Email_login">
+								Email Adress :
+							</label>
+							<input name="" id="Email_login" placeholder="" value="" type="email" />
+						</fieldset>
+					</div>
+					<div data-role="fieldcontain">
+						<fieldset data-role="controlgroup">
+							<label for="password_login">
+								Password :
+							</label>
+							<input name="" id="password_login" placeholder="" value="" type="password" />
+						</fieldset>
+					</div>
+					<button id="submit" data-theme="e" data-icon="check" data-iconpos="right" ><a id="Login_login" data-role="button" >
+						Log in
+					</a></button>
+                </form>
+                <a id="Register_now" data-role="button" data-theme="e"i target="_blank" href="register.html">
+                    Register Now
+                </a>
                 <div>
-                    <a id="Forgot_password" href="http://seylul.github.com/ma/forgot_pas" data-transition="fade">
+                    <a id="Forgot_password" href="forgot_pas.html" data-transition="fade">
                         Forgot your password?
                     </a>
                 </div>
-                <a id="Login_login" data-role="button" data-theme="e" href="http://seylul.github.com/ma/home2" data-icon="check" data-iconpos="right">
-                    Log in
-                </a>
-                <a id="Register_now" data-role="button" data-theme="e" href="http://seylul.github.com/ma/register">
-                    Register Now
-                </a>
             </div>
+            <div id="ack"></div> 
         </div>
-        <script>
-            //App custom javascript
-        </script>
-</form>
+		<script type="text/javascript" src="my_script.js"></script>
     </body>
 </html>

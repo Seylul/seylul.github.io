@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>
+        </title>
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+        <link rel="stylesheet" href="css/my.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.2.0/jquery.mobile-1.2.0.min.js">
+        </script>
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
+        <script src="js/my2.js">
+        </script>
+    </head>
+    <body onload="initialize()">
+        <!-- Home -->
+        <div data-role="page" id="page1">
+            <div data-theme="e" data-role="header">
+                <h3>
+                    Places
+                </h3>
+                <a data-role="button" data-theme="e" href="home2.html" data-icon="home" data-iconpos="left" class="ui-btn-left">
+                    Back
+                </a>
+            </div>
+            <div data-role="content">
+                <div id="map_canvas" style="width: 100%px; height: 250px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;">
+                    <div style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px" /></div>
+                </div>
+		<table style="width:100%">
+		<tr>
+		<td data-theme="e"><div style="color:#1b556a; font-weight:bold;" >Types:</div></td>
+		<td><select id="types" onchange="updateMode()">
+			<option value="airport">Airport</option>
+			<option value="amusement_park">Amusement Park</option>			
+			<option value="art_gallery">Art Gallery</option>
+			<option value="bus_station">Bus Station</option>
+			<option value="church">Church</option>
+			<option value="hindu_temple">Hindu Temple</option>
+			<option value="mosque">Mosque</option>
+			<option value="museum">Museum</option>
+			<option value="night_club">Night Club</option>
+			<option value="train_station">Train Station</option>
+			<option value="park">Park</option>
+			<option value="synagogue">Synagogue</option>
+			<option value="zoo">Zoo</option>
+		</select></td>
+		</tr>
+		<tr>
+		<td><div style="color:#1b556a; font-weight:bold;" >Radius:</div></td>
+		<td><select id="radius" onchange="updateMode()">
+			<option value="5000">5000</option>
+			<option value="50000">50000</option>
+			<option value="500000">500000</option>
+			</select>
+		</td>
+		</tr>
+		<tr>
+		<td><div style="color:#1b556a; font-weight:bold;" >Display:</div></td>
+		<td><select id="mapid" onchange="updateMode()">
+			<option value="Roadmap">Roadmap</option>
+			<option value="Satellite">Satellite</option>
+			<option value="Hybrid">Hybrid</option>
+			<option value="Terrain">Terrain</option>
+		</select></td>
+		</tr>
+		</table>
+                <ul data-role="listview" data-divider-theme="e" data-inset="true"></ul>
+                
+                <div id="s"></div>
+                
+            </div>
+            <div id="summary"></div>
+        </div>
+    </body>
+</html>
