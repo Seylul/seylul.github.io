@@ -8,3 +8,16 @@ Cassandra, Java ile geliştirilmiş, açık kaynak(open source), nosql veritaban
 Hız açısından önemli bir veritabanı olduğundan genelde hızlı arama yapılan ve databaseleri büyük olan servislerin tercihi oluyor. Doğruluğunu araştırmadım fakat internette okuduğum kadarıyla Facebook, Twitter, Amazon gibi devler, veritabanı ihtiyacında Cassandra'yı kullanıyor.  
 
 
+Cassandra'nın Mysql ile karşılaştırılmasıyla ilgili ise şöyle bir tablo var :
+
+MySQL Comparison
+
+•MySQL > 50 GB Data 
+Writes Average : ~300 ms
+Reads Average : ~350 ms
+•Cassandra > 50 GB Data
+Writes Average : 0.12 ms
+Reads Average : 15 ms
+
+
+
