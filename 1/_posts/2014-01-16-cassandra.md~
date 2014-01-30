@@ -43,7 +43,7 @@ cqlsh> CREATE SCHEMA demo WITH replication = { 'class' : 'SimpleStrategy', 'repl
 | create | CREATE KEYSPACE foo WITH replication =|  Create keyspace bar  |
 |	 | { 'class' : 'SimpleStrategy',         |                       |
 |	 |'replication_factor' : 1 } ;     	 |                       |
-|   use  |             use foo;                  |     use bar;          |
-+--------+---------------------------------------+-----------------------+
+|   use  |             use foo;                  | use bar;              |
++---+------------+-------------+
 
 
