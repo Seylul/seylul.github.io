@@ -32,19 +32,14 @@ Komut satırına cqlsh/cassandra-cli yazdığımızda:
 
 düştüğümüz komut satırı etiketleri yukarıdaki gibi olur.
 
-cqlsh> CREATE SCHEMA demo WITH replication = { 'class' : 'SimpleStrategy', 'replication_factor' : 1 };  
+###cqlsh 
+========
+CREATE : CREATE KEYSPACE foo WITH replication={ 'class' : 'SimpleStrategy','replication_factor' : 1 } ;
+USE : use foo;
 
-
-
-
-+--------+---------------------------------------+-----------------------+  
-|        |   cqlsh        			 |      cassandra-cli    |  
-+--------+---------------------------------------+-----------------------+  
-|        |       	                         |                       |  
-| create | CREATE KEYSPACE foo WITH replication =|  Create keyspace bar  |  
-|	 | { 'class' : 'SimpleStrategy',         |                       |  
-|	 |'replication_factor' : 1 } ;     	 |                       |  
-|   use  |             use foo;                  |     use bar;          |  
-+--------+---------------------------------------+-----------------------+  
+###Cassandra-cli
+================
+CREATE : create keyspace bar
+USE : use bar
 
 
