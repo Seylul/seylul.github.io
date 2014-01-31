@@ -44,15 +44,17 @@ GET :SELECT * FROM User;
   
 CREATE KEYSPACE: create keyspace bar  
 USE : use bar  
-CREATE TABLE : create column family User with comparator = UTF8Type;  
-	       \update column family User with column_metadata =  
-\ [{column_name: first, validation_class: UTF8Type},  
-\ {column_name: last, validation_class: UTF8Type},  
-\ {column_name: age, validation_class: UTF8Type, index_type: KEYS}];  
-INSERT :  assume User keys as utf8;   
- \ set User['ying']['first'] = 'Eylul';  
- \ set User['ying']['last'] = 'AKBAS';  
- \ set User['ying']['age'] = '23';   
+CREATE TABLE :   
+- create column family User with comparator = UTF8Type;  
+- update column family User with column_metadata =  
+* [{column_name: first, validation_class: UTF8Type},  
+* {column_name: last, validation_class: UTF8Type},  
+* {column_name: age, validation_class: UTF8Type, index_type: KEYS}];  
+INSERT :  
+- assume User keys as utf8;   
+* set User['ying']['first'] = 'Eylul';  
+* set User['ying']['last'] = 'AKBAS';  
+* set User['ying']['age'] = '23';   
 DESCRIBE :describe;
 GET : get User['ying'];
 
