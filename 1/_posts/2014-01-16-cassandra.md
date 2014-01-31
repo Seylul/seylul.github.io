@@ -33,12 +33,26 @@ düştüğümüz komut satırı etiketleri yukarıdaki gibi olur.
 
 ####Cqlsh   
 
-CREATE : CREATE KEYSPACE foo WITH replication={ 'class' : 'SimpleStrategy','replication_factor' : 1 } ;  
+CREATE KEYSPACE: CREATE KEYSPACE foo WITH replication={ 'class' :'SimpleStrategy','replication_factor' : 1 } ;  
 USE : use foo;  
+CREATE TABLE : CREATE TABLE User (user_id varchar PRIMARY KEY, first varchar, last varchar, age int);  
+INSERT : INSERT INTO User (user_id, first, last, age)  VALUES ('ying', 'Eylul', 'AKBAS', 23);  
+GET :SELECT * FROM User;
 
 ####Cassandra-cli  
   
-CREATE : create keyspace bar  
+CREATE KEYSPACE: create keyspace bar  
 USE : use bar  
+CREATE TABLE : create column family User with comparator = UTF8Type;  
+	       update column family User with column_metadata =  
+        	[       {column_name: first, validation_class: UTF8Type},  
+        		{column_name: last, validation_class: UTF8Type},  
+        		{column_name: age, validation_class: UTF8Type, index_type: KEYS}];  
+INSERT :  assume User keys as utf8;   
+set User['ying']['first'] = 'Eylul';  
+set User['ying']['last'] = 'AKBAS';  
+DESCRIBE :describe;
+GET : get User['ying'];
 
-
+ 
+set User['ying']['age'] = '23';  
