@@ -35,10 +35,14 @@ CQLsh ile Cassandra-cli arasında kullanım farklılıkları var size birkaç ku
 ####Cqlsh   
 
 CREATE KEYSPACE: CREATE KEYSPACE foo WITH replication={ 'class' :'SimpleStrategy','replication_factor' : 1 } ;  
+
 USE : use foo;  
+
 CREATE TABLE : CREATE TABLE User (user_id varchar PRIMARY KEY, first varchar, last varchar, age int);  
+
 INSERT : INSERT INTO User (user_id, first, last, age)  VALUES ('ying', 'Eylul', 'AKBAS', 23);  
-GET :SELECT * FROM User;
+
+GET :SELECT * FROM User;  
 
 ####Cassandra-cli  
   
