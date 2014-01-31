@@ -18,6 +18,6 @@ Merhabalar şu an okumakta olduğunuz bloğuma yazdığım yazıları push ederk
 
 uyarıda yayınlamak istediğim makalenin markdown hataları içerdiğini yazıyordu. Ama düzeltmeme rağmen sorunun nereden kaynaklandığını bulamıyordum. İşte son durumda şu komut imdadıma yetişti:  
 
-	~$jekyll build --safe  
+	jekyll build --safe  
 
 komutunu kullandığımda bana markdown dosyamda yaptığım yazım hatalarını gösteriyordu. Ben de bunları düzeltip kaydettikten sonra makalemi bloğumdan yayınlamayı başardım. 
