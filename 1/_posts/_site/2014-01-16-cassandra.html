@@ -14,7 +14,7 @@
 
 <pre><code>$cqlsh  
 cqlsh&gt;exit  </code></pre>
-<hr />
+<hr /><hr />
 <pre><code>$cassandra-cli  
 \[default@unknown]exit;  </code></pre>
 
@@ -22,22 +22,42 @@ cqlsh&gt;exit  </code></pre>
 
 <h4 id="cqlsh">Cqlsh</h4>
 
-<p>CREATE KEYSPACE: CREATE KEYSPACE foo WITH replication={ ‘class’ :’SimpleStrategy’,’replication_factor’ : 1 } ;<br />USE : use foo;<br />CREATE TABLE : CREATE TABLE User (user_id varchar PRIMARY KEY, first varchar, last varchar, age int);<br />INSERT : INSERT INTO User (user_id, first, last, age) VALUES (‘ying’, ‘Eylul’, ‘AKBAS’, 23);<br />GET :SELECT * FROM User;</p>
+<p>CREATE KEYSPACE: CREATE KEYSPACE foo WITH replication={ ‘class’ :’SimpleStrategy’,’replication_factor’ : 1 } ;</p>
+
+<p>USE : use foo;</p>
+
+<p>CREATE TABLE : CREATE TABLE User (user_id varchar PRIMARY KEY, first varchar, last varchar, age int);</p>
+
+<p>INSERT : INSERT INTO User (user_id, first, last, age) VALUES (‘ying’, ‘Eylul’, ‘AKBAS’, 23);</p>
+
+<p>GET :SELECT * FROM User;</p>
 
 <h4 id="cassandracli">Cassandra-cli</h4>
 
-<p>CREATE KEYSPACE: create keyspace bar<br />USE : use bar<br />CREATE TABLE :</p>
+<p>CREATE KEYSPACE: create keyspace bar</p>
+
+<p>USE : use bar</p>
+
+<p>CREATE TABLE :</p>
 
 <ul>
 <li>create column family User with comparator = UTF8Type;</li>
 
-<li>update column family User with column_metadata =[{column_name: first, validation_class: UTF8Type}, {column_name: last, validation_class: UTF8Type}, {column_name: age, validation_class: UTF8Type, index_type: KEYS}];<br />INSERT :</li>
+<li>update column family User with column_metadata =[{column_name: first, validation_class: UTF8Type},{column_name: last, validation_class: UTF8Type},{column_name: age, validation_class: UTF8Type,index_type: KEYS}];</li>
+</ul>
 
+<p>INSERT :</p>
+
+<ul>
 <li>assume User keys as utf8;</li>
 
 <li>set User[‘ying’][‘first’] = ‘Eylul’;</li>
 
 <li>set User[‘ying’][‘last’] = ‘AKBAS’;</li>
 
-<li>set User[‘ying’][‘age’] = ‘23’; <br />DESCRIBE :describe;<br />GET : get User[‘ying’];</li>
+<li>set User[‘ying’][‘age’] = ‘23’;</li>
 </ul>
+
+<p>DESCRIBE :describe;</p>
+
+<p>GET : get User[‘ying’];</p>
