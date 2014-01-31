@@ -1,0 +1,18 @@
+<p>Ubuntu 10.10 netbook sürümünden 11.04 sürümüne yükseltme yaptıktan sonra konsoldan githubdaki depoma erişirken aşağıdaki hatayı almaya başladım. Ve bu hatayı almadan önce uzun bir süre beklemede kalıyordum.</p>
+
+<pre><code>Read from socket failed: Connection reset by peer
+fatal: The remote end hung up unexpectedly  </code></pre>
+
+<p>Daha sonra help.github.com adresindeki işlemleri tekrardan uygulamadım bu sefer</p>
+
+<pre><code>permission denied(publickey) </code></pre>
+
+<p>hatası almaya başladım ssh içinde config dosyasını github’ın help sayfasındaki hatalar kısmında belirttiği gibi düzenledim ancak yine aynı hatayı aldım.Farklılık olsun diye en son <strong>id_rsa.pub</strong> dosyasının içeriğini hesabıma eklerken kopyalamayı vim ile değilde geditle açtıktan sonra yaptım bu sefer</p>
+
+<pre><code>ssh git@github.com </code></pre>
+
+<p>komutuyla bağlantımı kontrol etmek istediğimde</p>
+
+<pre><code>PTY allocation request failed on channel 0</code></pre>
+
+<p>cevabını alıyorum hata olup olmadığını bilmiyorum çünkü şuanda depoma erişebiliyorum.Sanırım key dosyasının içeriğinin vim’de iken kopyaladığım için bu durumları yaşadım. Benzer sorunu yaşayan arkadaşlarımla burada konuşmuşmuştuk sorunu halledemeyenler <a href="https://gist.github.com/1021381">1</a> nolu linkten de yararlanabilirler. Burada bir güncelleme yapıyorum,yukarıda vermiş olduğum linkteki en alttaki çözüm yöntemini denedim işe yaradı, oradan da faydalanabilirsiniz.</p>

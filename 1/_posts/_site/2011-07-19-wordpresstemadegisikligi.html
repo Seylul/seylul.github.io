@@ -1,0 +1,23 @@
+<p><a href="http://www.wp-tr.org/" title="wordpress">Wordpress</a>‘i sitesinden <strong>/var/www</strong> dizini içine indiriyoruz.Yeni bir tema eklemek için indirdiğimiz temayı (internette ufak bi göz gezdirmeyle rahatlıkla bulunabilir),</p>
+
+<pre><code>var/www/wp-content/themes </code></pre>
+
+<p>dizinine atalım. <br /> Tarayıcıya;</p>
+
+<pre><code>localhost/var/www/wp-content/themes/temaadi</code></pre>
+
+<p>yazınca sayfanın boş döndüğünü görürüz. Çünkü gerekli ayarlar yapılmamıştır.Bunun için tarayıcıya;</p>
+
+<pre><code>localhost/wordpress </code></pre>
+
+<p>yazıp yapılandırma dosyasını yarat kısmına tıklayıp veritabanımızı oluşturuyoruz.Ya da</p>
+
+<pre><code>wordpress -&gt; wp-config-sample.php </code></pre>
+
+<p>adlı dosyadan da ayarları yapabiliriz. Fakat burada dikkat edilmesi gereken kısım her iki durumdan sonra da</p>
+
+<pre><code>wp-config-sample.php  ---&gt; wp-config.php</code></pre>
+
+<p>olarak değiştirilmesidir. Dosya izinlerini de açtıktan sonra istediğiniz değişikliği yaparak tema üzerinde oynayabilirsiniz.Dosya izinlerini şu komutla açabilirsiniz.</p>
+
+<pre><code>chmod 777 dizinadi </code></pre>

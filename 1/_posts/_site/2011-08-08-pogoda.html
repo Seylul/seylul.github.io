@@ -1,0 +1,46 @@
+<p>Pagoda; github üzerinden php yayını yapmamızı sağlar.Ben şimdi bir deneme yayını, daha sonra bir wordpress sitesi yayınlamayı anlatmaya çalışacağım. Önce github’ımızda bir repo oluşturup(bu döküman için adını pagodadepo olarak alıcam,anlatımın kolaylaşması açısından) için <code>test.php</code>i koyalım. test.php’nin içine herhangi bir komut girelim <code>echo</code> olabilir mesela.</p>
+
+<pre><code>&lt; ?
+echo &quot;deneme yazısıdır.&quot; ;
+? &gt;</code></pre>
+
+<p>Şimdi <a href="http://www.pagodabox.com/">pagoda</a>‘nın sitesine girelim. <code>Login</code> olduktan sonra <code>New Application</code> kısmına tıklıyoruz. Gelen sayfadaki ilk iki adımı zaten yaptık.<br /> 3.adımda pagodadepo’nun url(git@github.com/&lt; kullanıcıadı &gt; /pagodadepo.git)’sini yazıyoruz. <br /> 4.adımda kuracağımız sitenin adını veriyoruz. eylul yazarsak mesela site eylul.pagodabox.com şeklinde gözükecektir. <br /> 5.adımda kullanmak istediğimiz framework’u seçiyoruz. Codelgniter, Slim, Joomla, Drupal vs.. kullanmak istemiyorsak framework kullanmıyorum seçeneğini seçip, <code>Launch Application</code> diyerek sonraki adıma geçelim. Gelen ekranda <code>go to admin panel </code> seçeneğine tıkladığımızda <code>app url</code> kısmında sitemizin adı gözükmeli. <br />Şimdi</p>
+
+<pre><code>sudo gem install pagoda </code></pre>
+
+<p>yazarak Pagoda’yı konsoldan idare edebilmek için pagodayı indirelim. Pagoda denemesi yapmak için pagodadepo’yu clonlayalım.</p>
+
+<pre><code>git clone git@github.com / &lt; kullanıcıadı &gt; /pagodadepo.git
+cd pagodadepo	
+pagoda pair
+pagoda deploy //Bu komut githubda yaptığımız değişikliği algılıyor.
+pagoda unpair</code></pre>
+
+<p>tarayıcıya <code>&lt;siteadi&gt;.pagodabox.com/test.php</code> yazdığımızda ekrana <code>deneme yazısıdır</code> yazısı çıkmalıdır. ilk denememiz bu şekildeydi. Şimdi wordpress sitesi yayınlamayı anlatıcam. Wordpress’i home dizini altındaki pagodadepo dizininin içine kuracağımız için , dizinin içeriğini silelim.</p>
+
+<pre><code>rm -rf *</code></pre>
+
+<p><a href="http://www.wp-tr.org/">Wordpress</a>‘i sitesinden indirelim. Wordpress dosyasının içindeki herşeyi(wp-admin,wp-config-sample.php vs..) pagodadepo dizininin içine atalım.Sonra bunu push edelim.</p>
+
+<pre><code>git add *
+git commit -a -m &quot;yorum&quot;
+git push</code></pre>
+
+<p>Şimdi bu değişikliği pagodaya haber verelim.</p>
+
+<pre><code>pagoda pair
+pagoda deploy
+pagoda unpair</code></pre>
+
+<p>Burada bir noktayı hatırlatıyım eğer deponun dışındaysak <code>pagoda pair -a depoadi</code> şeklinde kullanırız.Deponun dışındaysak deponun adını belirtmemiz gerekir.</p>
+
+<p>Şimdi database oluşturalım.</p>
+
+<pre><code>www.pagodabox.com -&gt; databases -&gt; add a new database 
+-&gt; choose MySql -&gt; cloud database -&gt;create this database</code></pre>
+
+<p>şeklinde veritabanımızı oluşturabiliriz.<br /><code>Show Credentials</code> linkini seçince önümüze gelen ekranda wordpress sitemiz için veritabanı bilgilerimiz yer alıyor. Bunun için wordpress dosyalarımızın bulunduğu dizini açalım içinde <code>wp-config-sample.php</code> şeklinde bir dosyamız olmalı o dosyayı açıp içini <code>show credentials</code>‘daki bilgilere göre düzenleyip kaydedelim. Çıkınca da dosyanın ismini;</p>
+
+<pre><code>wp-config-sample.php -&gt;wp-config.php </code></pre>
+
+<p>olarak değiştirelim. Sonra bunu önce github’dan <code>push</code>‘layıp sonra pagoda’ya bunu bildiriyoruz. &lt; siteadi &gt; .pogodabox.com ‘u tıklayıp ufak bilgileri de kendimize göre doldurduktan sonra sitemiz kullanıma hazır hale gelir.</p>

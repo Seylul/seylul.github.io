@@ -1,0 +1,51 @@
+<p>Crontab dosyası; tek bir satırda, belirtilen zamanda gerçekleştirilebilecek olan komutlardan oluşur. Crantab’a belli periyotta verilen komutu çalıştırması için (ki bu sunucularda çok işe yarayan bir özelliktir) şu adımları izleyebiliriz. Öncelikle bash script dosyamızı oluşturalım;</p>
+
+<pre><code>vi ornekscript.sh</code></pre>
+
+<p>içine çalıştırmak istediğimiz komutları sırasıyla yazıyoruz. Kaydettikten sonra izinleri düzenleyelim (çalıştırılabilir yapalım.) ;</p>
+
+<pre><code>chmod +x ornekscript.sh</code></pre>
+
+<p>şimdi;</p>
+
+<pre><code>crontab -e (edit-duzenliyoruz)</code></pre>
+
+<p>komutunu vererek düzenliyoruz. <strong>Nasıl mı?</strong> Crontab’da her satır ayrı bir girdiyi ifade eder ve satır formatı şu şekildedir;</p>
+
+<pre><code> * * * * * /calisacak/programin/yeri/programim.calistir</code></pre>
+
+<p>Burada koyduğumuz yıldızların her birinin birer anlamı vardır.</p>
+
+<ol>
+<li>yıldız dakikayı ifade eder, 0 – 59 arasında değer alır.</li>
+
+<li>yıldız ise saati belirler, 0 ile 23 arasında bir değer alır.</li>
+
+<li>yıldız ayın günlerini ifade eder.</li>
+
+<li>yıldız ayları,</li>
+
+<li>yıldız da haftanın günlerini ifade eder (0 ya da 7 değerlerinin pazar gününü ifade eder.).</li>
+</ol>
+
+<p>Örneğin;<br />/root/scripts/backup.sh betiğimizi her gece saat 00:00 da çalıstıracak bir crontab içeriği şu şekildedir:</p>
+
+<pre><code>00 00 * * * /root/scripts/backup.sh</code></pre>
+
+<p>Mesela günün belirli 2 saatinde çalıştırmak istiyoruz. sabah 9 da ve öğlen 3 te:</p>
+
+<pre><code>00 09,15 * * * /root/scripts/backup.sh</code></pre>
+
+<p>Son olarak cron görevi girildikten sonra crontab’ı resetlemek gerekiyor. Bunun için;</p>
+
+<pre><code>    /etc/init.d/crond.sh restart </code></pre>
+
+<p>yapılacak işlerin silinmesi için;</p>
+
+<pre><code>crontab -r</code></pre>
+
+<p>listelenmesi için ;</p>
+
+<pre><code>crontab -l </code></pre>
+
+<p>komutlarını kullanabiliriz.</p>

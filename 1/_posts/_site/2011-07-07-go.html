@@ -1,0 +1,96 @@
+<p><a href="http://roktas.me/">Roktas</a> 2011-güz yarıyılı programlama dilleri dersinde , <em>GO</em> programlama dilini işleyeceğimizden bahsetmiş. Bende hemen kuruverdim. Birinci sınıfın başında yine adını duymuş, araştırmış fakat ne kurabilmiştim ne iki satır kod yazabilmiştim. Staj döneminde ikinci sınıfı bitirmemin verdiği bilgi birikimiyle kurmayı başardım. Adımlarımı anlatmaya çalışacağım.</p>
+
+<p>Go; C programlama ailesine göre tasarlanıp ve Python’un özelliklerini barındıran açık kaynak bir sistem programlama dilidir.</p>
+
+<p>Kurulumu şu şekildedir; öncelikle birkaç c aracını yüklememiz gerekiyor.Şu programlara ihtiyacımız var;</p>
+
+<ul>
+<li>
+<p>gcc,</p>
+</li>
+
+<li>
+<p>standart c kütüphaneleri,</p>
+</li>
+
+<li>
+<p>Bison ayrıştırıcı üreteci,</p>
+</li>
+
+<li>
+<p>GNU make (3.81 versiyonu yada daha üstü),</p>
+</li>
+
+<li>
+<p>awk,</p>
+</li>
+
+<li>
+<p><em>ed</em> metin editörü. <br />Bunlar için şu komutu yazıyoruz.</p>
+
+<p>sudo apt-get install bison ed gawk gcc libc6-dev make</p>
+</li>
+</ul>
+
+<p><a href="http://tr.wikipedia.org/wiki/Mercurial">mercurial</a> yoksa onu yüklüyoruz.</p>
+
+<pre><code>sudo apt-get install mercurial 
+sudo apt-get install python-setuptools python-dev build-essential gcc  </code></pre>
+
+<p>Go isminde başka bir dizin olup olmadığını kontrol ediyoruz..</p>
+
+<pre><code>hg clone -r release https://go.googlecode.com/hg/ go  </code></pre>
+
+<p>Şimdi Go’yu yükleme işlemine geçebiliriz.</p>
+
+<pre><code>cd go/src
+./all.bash  </code></pre>
+
+<p>İşlem tamamlanınca şu çıktıyı vermesi gerekiyor.</p>
+
+<pre><code>--- cd ../test
+0 known bugs; 0 unexpected bugs
+ALL TESTS PASSED</code></pre>
+<hr />
+<pre><code>Installed Go for linux/386 in /home/eylul/go.
+Installed commands in /home/eylul/go/bin.
+*** You need to add /home/eylul/go/bin to your $PATH. ***
+The compiler is 8g.</code></pre>
+
+<p>Benim bilgisayarım 32bit olduğu için “8g” çıktı, 64 bit için “6g” çıktısını verir.</p>
+
+<p>Şimdi programı yazmaya başlayabiliriz.</p>
+
+<pre><code>cd /home/kullaniciadi/go/bin
+gedit merhaba.go</code></pre>
+
+<p>İlk kodumuzu yazalım:</p>
+
+<pre><code>package main
+import &quot;fmt&quot;
+func main() {
+fmt.Printf(&quot;merhaba dunya\n&quot;)
+}</code></pre>
+
+<p>Kaydedip çıkıyoruz.</p>
+
+<pre><code>8g merhaba.go</code></pre>
+
+<p>komutunu kullanarak programı derliyoruz yalnız ben bu işlemi yaptığımda şu şekilde bir hata aldım.</p>
+
+<pre><code>8g: command not found</code></pre>
+
+<p>Bu hatayı gidermek için ise yolda şöyle bir değişiklik yapıyoruz:</p>
+
+<pre><code>/home/[kullaniciismi]/go/bin
+export PATH</code></pre>
+
+<p>Şimdi o hatayı almadan devam edebiliriz.</p>
+
+<pre><code>8g merhaba.go
+8l merhaba.8
+./8.out</code></pre>
+
+<p>ekranda şu çıktıyı görürüz.</p>
+
+<pre><code>merhaba dunya</code></pre>
