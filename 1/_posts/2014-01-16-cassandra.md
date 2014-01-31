@@ -25,7 +25,8 @@ Komut satırına cqlsh/cassandra-cli yazdığımızda:
 
 	$cqlsh  
 	cqlsh>exit  
--
+-  
+-  
 	$cassandra-cli  
 	\[default@unknown]exit;  
 
