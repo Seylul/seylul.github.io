@@ -32,14 +32,14 @@ Komut satırına cqlsh/cassandra-cli yazdığımızda:
 
 düştüğümüz komut satırı etiketleri yukarıdaki gibi olur.
 
-###cqlsh 
+###Cqlsh 
 ========
-CREATE : CREATE KEYSPACE foo WITH replication={ 'class' : 'SimpleStrategy','replication_factor' : 1 } ;
-USE : use foo;
+CREATE : CREATE KEYSPACE foo WITH replication={ 'class' : 'SimpleStrategy','replication_factor' : 1 } ;  
+USE : use foo;  
 
 ###Cassandra-cli
 ================
-CREATE : create keyspace bar
-USE : use bar
+CREATE : create keyspace bar  
+USE : use bar  
 
 
