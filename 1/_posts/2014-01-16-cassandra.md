@@ -55,7 +55,7 @@ INSERT :
 * set User['ying']['first'] = 'Eylul';  
 * set User['ying']['last'] = 'AKBAS';  
 * set User['ying']['age'] = '23';   
-DESCRIBE :describe;
+DESCRIBE :describe;  
 GET : get User['ying'];
 
  
