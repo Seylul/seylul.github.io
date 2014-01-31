@@ -8,18 +8,17 @@ Cassandra, Java ile geliştirilmiş, açık kaynak(open source), nosql veritaban
 Hız açısından önemli bir veritabanı olduğundan genelde hızlı arama yapılan ve databaseleri büyük olan servislerin tercihi oluyor. Doğruluğunu araştırmadım fakat internette okuduğum kadarıyla Facebook, Twitter, Amazon gibi devler, veritabanı ihtiyacında Cassandra'yı kullanıyor.  
 
 
-Cassandra'nın Mysql ile karşılaştırılmasıyla ilgili ise şöyle bir tablo var :
+Cassandra'nın Mysql ile karşılaştırılmasıyla ilgili ise şöyle bir tablo var :  
 
-MySQL karşılaştırması :
+MySQL karşılaştırması :  
 
-•MySQL > 50 GB Data 
-Writes Average : ~300 ms
+•MySQL > 50 GB Data  
+Writes Average : ~300 ms  
 Reads Average : ~350 ms  
 
-•Cassandra > 50 GB Data
-Writes Average : 0.12 ms
-Reads Average : 15 ms
-
+•Cassandra > 50 GB Data  
+Writes Average : 0.12 ms  
+Reads Average : 15 ms  
 
 Cassandra'da, veri insert etmek için iki yöntemi kullanabiliriz, cqlsh'ı ya da cassandra-cli 'yi.
 Komut satırına cqlsh/cassandra-cli yazdığımızda:   
@@ -28,16 +27,16 @@ Komut satırına cqlsh/cassandra-cli yazdığımızda:
 	cqlsh>exit  
 
 	$cassandra-cli  
-       \[default@unknown]exit;  
+	\[default@unknown]exit;  
 
 düştüğümüz komut satırı etiketleri yukarıdaki gibi olur.
 
-###Cqlsh 
+####Cqlsh 
 ========
 CREATE : CREATE KEYSPACE foo WITH replication={ 'class' : 'SimpleStrategy','replication_factor' : 1 } ;  
 USE : use foo;  
 
-###Cassandra-cli
+####Cassandra-cli
 ================
 CREATE : create keyspace bar  
 USE : use bar  
