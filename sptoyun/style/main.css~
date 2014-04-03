@@ -328,10 +328,10 @@ hr {
     background: #f0f url('../img/ayfer.png');
     background-size: cover; }
   .tile.tile-32 .tile-inner {
-    background: #f0f url('../img/evren.png');
+    background: #f0f url('../img/yucel.png');
     background-size: cover; }
   .tile.tile-64 .tile-inner {
-    background: #f0f url('../img/gurcan.png');
+    background: #f0f url('../img/evren.png');
     background-size: cover; }
   .tile.tile-128 .tile-inner {
     background: #f0f url('../img/vahit.png');
@@ -340,7 +340,7 @@ hr {
       .tile.tile-128 .tile-inner {
         font-size: 25px; } }
   .tile.tile-256 .tile-inner {
-    background: #f0f url('../img/yucel.png');
+    background: #f0f url('../img/gurcan.png');
     background-size: cover; }
     @media screen and (max-width: 520px) {
       .tile.tile-256 .tile-inner {
