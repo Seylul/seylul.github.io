@@ -67,15 +67,13 @@
       <strong class="important">Nasıl oynanır?</strong>
 	</p>
 	<p>
-	  <strong>Yön tuşları</strong>nı kullanarak <strong>aynı</strong> kardoları birleştir, <strong>Sami Bey</strong>'e ulaş.
+	  <strong>Yön tuşları</strong>nı kullanarak <strong>aynı</strong> kareleri birleştir, <strong>Sami Bey</strong>'e ulaş.
     </p>
     <hr>
     <p>
     <strong>2048</strong> <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli</a>'nin ürettiği bir oyundur.
 	</p>
-	<p>
-	<strong>SEKOM</strong>laştırmayı gerçekleştiren: <a href="https://github.com/seylul" target="_blank">Eylül AKBAŞ</a>.
-    </p>
+	
 	<p>
 	<a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024</a> ve konsept olarak benzeri <a href="http://asherv.com/threes/" target="_blank">Threes</a> oyunlarından yola çıkılmıştır.
     </p>
