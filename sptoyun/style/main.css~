@@ -316,49 +316,49 @@ hr {
     z-index: 10;
     font-size: 55px; }
   .tile.tile-2 .tile-inner {
-    background: #f0f url('../img/cevik.jpg');
+    background: #f0f url('../img/eylul.png');
     background-size: cover; }
   .tile.tile-4 .tile-inner {
-    background: #f0f url('../img/voli.jpg');
+    background: #f0f url('../img/gokay.png');
     background-size: cover; }
   .tile.tile-8 .tile-inner {
-    background: #f0f url('../img/topbas.jpg');
+    background: #f0f url('../img/ugur.png');
     background-size: cover; }
   .tile.tile-16 .tile-inner {
-    background: #f0f url('../img/imelih.jpg');
+    background: #f0f url('../img/ayfer.png');
     background-size: cover; }
   .tile.tile-32 .tile-inner {
-    background: #f0f url('../img/binali.jpg');
+    background: #f0f url('../img/evren.png');
     background-size: cover; }
   .tile.tile-64 .tile-inner {
-    background: #f0f url('../img/egeboy.jpg');
+    background: #f0f url('../img/gurcan.png');
     background-size: cover; }
   .tile.tile-128 .tile-inner {
-    background: #f0f url('../img/boyunsuz.jpg');
+    background: #f0f url('../img/vahit.png');
     background-size: cover; }
     @media screen and (max-width: 520px) {
       .tile.tile-128 .tile-inner {
         font-size: 25px; } }
   .tile.tile-256 .tile-inner {
-    background: #f0f url('../img/ayakkabici.jpg');
+    background: #f0f url('../img/yucel.png');
     background-size: cover; }
     @media screen and (max-width: 520px) {
       .tile.tile-256 .tile-inner {
         font-size: 25px; } }
   .tile.tile-512 .tile-inner {
-    background: #f0f url('../img/reza.jpg');
+    background: #f0f url('../img/burak.png');
     background-size: cover; }
     @media screen and (max-width: 520px) {
       .tile.tile-512 .tile-inner {
         font-size: 25px; } }
   .tile.tile-1024 .tile-inner {
-    background: #f0f url('../img/bilo.jpg');
+    background: #f0f url('../img/gokhangunduzalp.png');
     background-size: cover; }
     @media screen and (max-width: 520px) {
       .tile.tile-1024 .tile-inner {
         font-size: 15px; } }
   .tile.tile-2048 .tile-inner {
-    background: #f0f url('../img/tayyo.jpg');
+    background: #f0f url('../img/samiezberci.png');
     background-size: cover; }
     @media screen and (max-width: 520px) {
       .tile.tile-2048 .tile-inner {
