@@ -9,6 +9,7 @@ But when i try to send about 1KB attachment, i can send mail succesfully.
 If attachment is over 1KB, script aslo says:  
 
     sendEmail[11971]: Email was sent successfully!
+
 But there is no mail in my mailbox.
 Firstly i viewed the /var/log/maillog, and i saw there:  
 
