@@ -30,18 +30,18 @@ Zero means unlimited they says.. I did this and restart the postfix for apply th
 But still i couldn't send mails that has over 1KB attachments. Then i looked at packet traces with tcpdump:  
 
     tcpdump -i eth0 -w out.cap &  
-    
-with this command to see where the packets break. 
+
+with this command to see where the packets break.  
 It is sending the mail body but for attachment it breaks and try and try again to send the attachments and packet size about 2K.
 Then i control the MTU value in ifconfig output.  
 
     ifconfig  
-    
+
 it was 1500 . Then i try to discrease the MTU value for send the packets with more little size.  
 
-    ifconfig eth0 mtu 1000 up 
-    service network restart
-    
+    ifconfig eth0 mtu 1000 up   
+    service network restart  
+
 With this action problem solved.
 
   
