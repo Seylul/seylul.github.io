@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Over 1KB attachments doesn't send with mail
+title: Over 1KB attachments don't send with mail
 ---
 
 I'm using Centos 6.5 and postfix for sending email. I could send mail with 
