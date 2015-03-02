@@ -20,4 +20,4 @@ uyarıda yayınlamak istediğim makalenin markdown hataları içerdiğini yazıy
 
 	~$jekyll build --safe  
 
-komutunu kullandığımda bana markdown dosyamda yaptığım yazım hatalarını gösteriyordu. Ben de bunları düzeltip kaydettikten sonra makalemi bloğumdan yayınlamayı başardım. 
+komutunu kullandığımda bana markdown dosyamda yaptığım yazım hatalarını gösteriyordu. Ben de bunları düzeltip kaydettikten sonra yazımı bloğumdan yayınlamayı başardım. 
