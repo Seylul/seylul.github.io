@@ -14,6 +14,7 @@ Gerekli evraklara da [buradan](http://www.vfsglobal.com/poland/turkey/participan
 Para Konusu
 ------------
 Önceki erasmus öğrencileri yatan hibelerimizi karttan yurtdışında kesintisiz faydalanabilmemizin yolunu Yapı Kredi'den kart çıkarmak olduğunu söylemişlerdi. Yatan hibemiz euro olduğu için onu bozdurup tl yapıp tl'lerimizi Yapı Krediye hesabımıza yatırınca yurtdışında UniCredit üyesi bankalardan paramızı kesintisiz çekebiliyoruz. Mesela Polonyadaki Unicredit üyesi olan banka aşağıda logosunu gördüğünüz Bank Pekao ![Pekao](https://github.com/Seylul/seylul.github.com/raw/master/chrome/pekao.png).
+
 Bu arada ben kart çıkarma konusunda diğer erasmus öğrencileriyle aynı fikirde olduğumu söyliyemiyeceğim Wroclaw için konuşacak olursak ben burada [IngBank](http://www.ingbank.com.tr/) ve [HSBC](http://www.hsbc.com.tr/tr/) çok gördüm, Hsbc'nin kartını kullanan tanıdıklarım da oldu burada. Aylık 5 TL gibi bir kart kullanım ücreti kesiyormuş. Yapı Kredi kartımı çıkartırken bu kartın öğrenci kartı olacağını ısrarla söylememe rağmen, 6 aylık kullanım ücreti olarak 58TL kesinti yaptı. Bu arada hangi kartı çıkarttırırsanız çıkarttırın mutlaka aldığınız kartı internet bankacılığına açtırın çünkü buradaki ATM'lerde hesabınızda ne kadar para kaldığını göremiyorsunuz.
 
 İletişim Konusu

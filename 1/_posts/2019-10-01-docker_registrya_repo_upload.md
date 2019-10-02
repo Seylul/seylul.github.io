@@ -41,7 +41,7 @@ Image name'de root namespace'sinizin yer alması şarttır.
 
 Eğer çıktısında aşağıdaki gibi "unauthorized" şeklinde bir hata alıyorsanız ve login olduğunuza eminseniz;
 
- ![Docker Push Error](https://github.com/Seylul/seylul.github.io/blob/master/chrome/dockerpush_error.png)
+ ![Docker Push Error](https://github.com/Seylul/seylul.github.io/raw/master/chrome/dockerpush_error.png)
 
 şeklinde bir hata alıyorsanız ve login olduğunuza eminseniz;
 
@@ -66,5 +66,5 @@ Aşağıdaki gibi çıktısı olmalıdır
  docker push seylul/plapi17:latest
 
  
-![Docker Push](https://github.com/Seylul/seylul.github.io/blob/master/chrome/dockerpush.png)
+![Docker Push](https://github.com/Seylul/seylul.github.io/raw/master/chrome/dockerpush.png)
  
