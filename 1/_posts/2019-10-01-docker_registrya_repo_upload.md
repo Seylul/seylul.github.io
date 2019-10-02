@@ -15,23 +15,29 @@ title: Docker Registry'a Nasıl Repository Upload Edilir?
 
 şeklinde komut gireceğiz. Burada repo ismini yanlış girersek; "An image doesn't exist locally with the tag" gibi bir uyarı verir.Bu yüzden ilk önce docker imajımıza bir tag girmemiz lazım,  
 
-####1.
+#### 1.
+
  Etiket yani tag girerken -t parametresini kullanacağız. Image name'de root namespace'sinizin yer alması şarttır. Mesela projeniz "plapi17" adı taşıyorsa ve DockerHub Namespace'siniz "seylul" ise ; Image name'iniz "seylul/plapi17" olmalıdır.
 	#docker build . -t seylul/plapi17  
  komutunu vererek yeni bir imaj oluşturalım
-####2. 
+#### 2.
+ 
  Docker imagelarımızı listeleyelim ve oluşturduğumuz imajın etiketine dikkat edelim. Çıkan listede tag sütunu altında yazar.
 	#docker images 
 burada kendi imajımızın etiketini bir sonraki adımda kullanacağız.
-####3.
+#### 3.
+
 Image name'de root namespace'sinizin yer alması şarttır.
+
 	#docker push <IMAGE-NAME>:TAG 
 	#docker push seylul/plapi17:latest 
+
 şeklinde komutu girdiğimizde docker hub'a upload'un başladığını görürüz.
 
 Eğer çıktısında aşağıdaki gibi "unauthorized" şeklinde bir hata alıyorsanız ve login olduğunuza eminseniz;
-	Docker Push Error
-	![alt text](https://github.com/Seylul/seylul.github.io/blob/master/images/dockerpush_error.PNG "Docker Push Error")
+
+ Docker Push Error
+ ![alt text](https://github.com/Seylul/seylul.github.io/blob/master/images/dockerpush_error.PNG "Docker Push Error")
 
 şeklinde bir hata alıyorsanız ve login olduğunuza eminseniz;
 
@@ -42,15 +48,17 @@ Eğer çıktısında aşağıdaki gibi "unauthorized" şeklinde bir hata alıyor
 	#cd xxx/plapi17
 	#docker login https://index.docker.io/v1/
 Aşağıdaki gibi çıktısı olmalıdır
-	Login with your Docker ID to push and pull images from Docker Hub. If you don't have a Docker ID, head over to https://hub.docker.com to create one.
+	Login with your Docker ID to push and pull images from Docker Hub. 
+	If you don't have a Docker ID, head over to https://hub.docker.com to create one.
 	Username: seylul
 	Password:
 	WARNING! Your password will be stored unencrypted in /xxx/.docker/config.json.
-	Configure a credential helper to remove this warning. See https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+	Configure a credential helper to remove this warning. 
+	See https://docs.docker.com/engine/reference/commandline/login/#credentials-store
 	Login Succeeded
 
 Şimdi tekrar push edelim.
 
-	docker push seylul/plapi17:latest
-	![alt text](https://github.com/Seylul/seylul.github.io/blob/master/images/dockerpush.PNG "Docker Push")
+ docker push seylul/plapi17:latest
+ ![alt text](https://github.com/Seylul/seylul.github.io/blob/master/images/dockerpush.PNG "Docker Push")
  
