@@ -64,13 +64,14 @@ param:
         # tam kullanıcı adı (ör. Recai Oktaş)
         fullname: Eylül Akbaş
         # email adresi (ör. roktas@bil.omu.edu.tr)
-        email: seylul@bil.omu.edu.tr
+        email: akbaseylul@gmail.com
         # ünvan (ör. Bilgisayar Mühendisliği Öğrencisi)
-        title: <a href="http://ondokuz.biz/">19</a> üyesi
+        #title: <a href="http://ondokuz.biz/">Twitter</a> üyesi
+	title: <a href= "https://www.linkedin.com/in/eylul-akbas"> DevOps Engineer/>
         # GnuPG kısa parmak izi (ör. DEADBEEF)
         gpg: ~
         # twitter adresi (ör. http://19.status.net/roktas)
-        twitter: http://19.status.net/seylul
+        twitter: https://twitter.com/akbaseylus
         # flick adresi (ör. http://flickr.com/photos/roktas)
         #flickr: http://flickr.com/photos/reha
         # facebook adresi (ör. http://facebook.com/roktas)
@@ -106,6 +107,6 @@ param:
         # google analytics takip numarası (ör. UA-1234567-8
         googleanalyticsid: ~
         # sayfa yorumları için disqus site kaydı (ör. roktas)
-        disqus: 19notlarii
+        disqus:  GithubIO
         # GitHub şerit metni (ör. GitHub'dayım)
         ribbon: GitHub'dayım
