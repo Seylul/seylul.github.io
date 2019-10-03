@@ -66,7 +66,6 @@ param:
         # email adresi (ör. roktas@bil.omu.edu.tr)
         email: akbaseylul@gmail.com
         # ünvan (ör. Bilgisayar Mühendisliği Öğrencisi)
-        # title: <a href="http://ondokuz.biz/">19</a> üyesi
 	title: <a href="https://www.linkedin.com/in/eylul-akbas">DevOps Engineer</a>
         # GnuPG kısa parmak izi (ör. DEADBEEF)
         gpg: ~
