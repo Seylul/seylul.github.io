@@ -6,7 +6,8 @@
 permalink: /:categories:month/:title
 
 # sözdizimi renklendirmesi
-pygments: true
+#pygments: true :Changed on 3.10.2019 because its unsupported now.
+rouge:true
 
 # tırnak karakterlerinin daha şık çıkması için smartypants
 rdiscount:
