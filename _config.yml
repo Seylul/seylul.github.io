@@ -106,6 +106,6 @@ param:
         # google analytics takip numarası (ör. UA-1234567-8
         googleanalyticsid: ~
         # sayfa yorumları için disqus site kaydı (ör. roktas)
-        disqus:  GithubIO
+        disqus:  saysomethingtoeylul
         # GitHub şerit metni (ör. GitHub'dayım)
         ribbon: GitHub'dayım
