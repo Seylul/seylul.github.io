@@ -67,7 +67,7 @@ param:
         email: akbaseylul@gmail.com
         # ünvan (ör. Bilgisayar Mühendisliği Öğrencisi)
         #title: <a href="http://ondokuz.biz/">Twitter</a> üyesi
-	title: <a href= "https://www.linkedin.com/in/eylul-akbas"> DevOps Engineer </a>
+	title:  <a href="http://www.linkedin.com/in/eylul-akbas">DevOps Engineer</a>
         # GnuPG kısa parmak izi (ör. DEADBEEF)
         gpg: ~
         # twitter adresi (ör. http://19.status.net/roktas)
