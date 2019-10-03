@@ -66,7 +66,7 @@ param:
         # email adresi (ör. roktas@bil.omu.edu.tr)
         email: akbaseylul@gmail.com
         # ünvan (ör. Bilgisayar Mühendisliği Öğrencisi)
-	title: DevOps Engineer
+	title: <a href="https://www.linkedin.com/in/eylul-akbas/">DevOps Engineer</a>
         # GnuPG kısa parmak izi (ör. DEADBEEF)
         gpg: ~
         # twitter adresi (ör. http://19.status.net/roktas)
